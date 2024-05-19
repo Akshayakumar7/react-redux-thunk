@@ -6,7 +6,7 @@ const initialState = {
 
 export default function formReducer(state = initialState, action) {
   const { type, myData } = action;
-  console.log("formReducer", type, myData);
+  // console.log("formReducer", type, myData);
   switch (type) {
     case FORM_UPDATE: {
       state.text = myData;

@@ -9,12 +9,12 @@ function App() {
   const dispatch = useDispatch();
 
   const todos = useSelector(function (state) {
-    console.log(state);
+    // console.log(state);
     return state.todoReducer.todos;
   });
 
   const text = useSelector(function (state) {
-    console.log(state);
+    // console.log(state);
     return state.formReducer.text;
   });
 
@@ -43,7 +43,7 @@ function ChildComponent() {
   const selectedTodo = useSelector(function (state) {
     return state.todoReducer.selectedTodo;
   });
-  console.log("childcomponent called", selectedTodo);
+  // console.log("childcomponent called", selectedTodo);
   return (
     <div>
       <h1>This is child {selectedTodo}</h1>

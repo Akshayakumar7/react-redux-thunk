@@ -9,7 +9,7 @@ const initialState = {
 
 export default function todoReducer(state = initialState, action) {
   const { type, myData } = action;
-  console.log("todoReducer", type, myData);
+//   console.log("todoReducer", type, myData);
 
   switch (type) {
     case TODO_ADD: {
